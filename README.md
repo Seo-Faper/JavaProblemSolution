@@ -68,4 +68,4 @@ public class Solution {
 }
 
 ```
-실행해서 맞는지 
+실행해서 테스트 통과 여부 확인
