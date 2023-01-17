@@ -9,5 +9,6 @@ public class SolutionTest {
         wee1.sol2.Solution sol = new Solution();
         Assertions.assertEquals(7,sol.solution("ULURRDLLU"));
         Assertions.assertEquals(7,sol.solution("LULLLLLLU"));
+        Assertions.assertEquals(1,sol.solution("UDUDUDUD"));
     }
 }
