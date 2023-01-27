@@ -5,7 +5,7 @@ import java.util.Stack;
 
 class Solution {
     public int[] solution(int[] progresses, int[] speeds) {
-        System.out.println("==========================================");
+
         Stack<Integer> L = new Stack<>();
 
         for(int i = progresses.length-1; i>=0; i--){
@@ -23,7 +23,7 @@ class Solution {
                 sk.push(L.pop());
                 init = sk.peek();
             }else{
-              //  System.out.println("init : "+init+" , L.peek() : "+L.peek());
+
                 if(init >= L.peek()){
                     sk.push(L.pop());
                 }else{
@@ -32,8 +32,7 @@ class Solution {
                     sk.clear();
                 }
             }
-         //   System.out.println("sk: "+sk.toString());
-          //   System.out.println("L: "+L.toString());
+
         }
         ans.add(sk.size());
         int[] answer = ans.stream().mapToInt(i -> i).toArray();
