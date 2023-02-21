@@ -6,8 +6,7 @@ public class SolutionTest {
     @Test
     public void testSolution(){
         Solution sol = new Solution();
-        Assertions.assertEquals(2,sol.solution(4, new int[]{4,10,15},new int[]{20,5,10},30));
-
+        Assertions.assertEquals("Yes",sol.solution(new String[]{"i", "drink", "water"},new String[]{"want", "to"},new String[]{"i", "want", "to", "drink", "water"}));
 
     }
 }
